@@ -12,6 +12,7 @@
   min-height: 600px;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .logo_place_header {
@@ -61,14 +62,15 @@
 .main-illustration_place_header {
   width: 765px;
   height: 608px;
-  top: 147px;
-  left: 830px;
   z-index: 1;
+  bottom: 0;
+  right: 0;
 }
 
 .header__square-pic {
   position: absolute;
   background-color: #2f80ed;
+
 }
 
 .squar-pic_place_header {
@@ -76,7 +78,7 @@
   width: 568px;
   right: 0;
   z-index: 0;
-  margin-top: 64px;
+  top: 64px;
 }
 
 .two-columns {
@@ -93,6 +95,12 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .two-columns__main-text {
@@ -144,10 +152,10 @@
   font-weight: normal;
 }
 
-.section-subtitle_place_digits { 
+.section-subtitle_place_digits {
   width: 60%;
   margin: auto;
-  text-align: center;  
+  text-align: center;
 }
 
 .table {
@@ -165,7 +173,13 @@
 }
 
 .table_place_digits {
-  display: flex; 
+  display: flex;
+}
+
+.table__cell {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .cell_place_table {
@@ -275,7 +289,7 @@
 .section-subtitle_theme_dark {
   width: 60%;
   margin: auto;
-  text-align: center;  
+  text-align: center;
 }
 
 .table_place_kaufman {
@@ -290,11 +304,11 @@
   gap: 80px;
   flex-direction: column;
   display: flex;
-  margin-top: 80px; 
+  margin-top: 80px;
 }
 
 .table_theme_dark {
-  display: flex; 
+  display: flex;
 }
 
 .cell_theme_dark {
@@ -323,7 +337,7 @@
 
 .triangle_place_kaufman {
   width: 877px;
-height: 877px;
+  height: 877px;
   top: 0;
   right: -210px;
   z-index: 0;
@@ -387,7 +401,10 @@ height: 877px;
 
 .footer__list {
   color: #f2f2f2;
-  margin-bottom: 16px;
+  bottom: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer__column_content_social {
