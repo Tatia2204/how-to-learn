@@ -1,11 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
 .page {
   max-width: 1600px;
   min-width: 1100px;
@@ -49,7 +41,6 @@ p {
 
 .header__subtitle {
   position: absolute;
-  flex-direction: row;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -57,6 +48,7 @@ p {
   bottom: 30px;
   left: 64px;
   z-index: 2;
+  margin: 0;
 }
 
 .header__link {
@@ -64,7 +56,7 @@ p {
   text-decoration: none;
 }
 
-.header__link_type_translate:hover {
+.link:hover {
   transition: 1s ease;
   opacity: 0.3;
 }
@@ -92,7 +84,7 @@ p {
 .two-columns {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 100px auto 0;
   width: 80%;
 }
 
@@ -103,6 +95,7 @@ p {
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -111,17 +104,16 @@ p {
 }
 
 .two-columns__paragraph {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 30px;
   list-style-type: none;
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
+  margin-top: 0;
 }
 
-.paragraph_font {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -132,8 +124,7 @@ p {
   font-size: 60px;
   line-height: 1.15;
   font-weight: bold;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 100px auto 20px;
   max-width: 60%;
   text-align: center;
 }
@@ -149,22 +140,16 @@ p {
 
 .table {
   display: flex;
-  justify-content: center;
-}
-
-.table-flex {
   flex-grow: 1;
   max-width: 1100px;
-  gap: 60px;
-  flex-direction: column;
-  display: flex;
-  margin-top: 60px;
-  padding-bottom: 100px;
-}
-
-.table__line {
+  flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 100px;
   justify-content: space-between;
-  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .table__cell {
@@ -172,6 +157,7 @@ p {
   padding: 0;
   list-style-type: none;
   width: 250px;
+  margin-top: 60px;
 }
 
 .table__cell:last-of-type {
@@ -179,16 +165,18 @@ p {
 }
 
 .table__heading {
-  margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .text__indent {
@@ -196,6 +184,7 @@ p {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 .feynman {
@@ -229,7 +218,7 @@ p {
   text-align: center;
 }
 
-.feynman_link {
+.feynman__link {
   color: #2f80ed;
   position: absolute;
   font-size: 36px;
@@ -240,53 +229,49 @@ p {
   top: 50%;
 }
 
-.feynman_link_type_translate:hover {
-  transition: 1s ease;
-  opacity: 0.3;
-}
-
 .kaufman {
   overflow: hidden;
   background-color: #1f1f1f;
   z-index: 1;
+  position: relative;
+  padding-bottom: 90px;
+
+}
+
+.kaufman__triangle {
   background-image: url("../images/kaufman-triangle.svg");
   background-repeat: no-repeat;
-  background-size: 877px 877px;
-  background-position: top 0 right -210px;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
 }
 
 .section-title_theme_dark {
-  margin-top: 90px;
-  color: #f2f2f2;
+  color: white;
+  margin: 0 auto 20px;
+  padding-top: 90px;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
-  color: #f2f2f2;
+  color: white;
+  z-index: 2;
 }
 
-.table-flex_place_kaufman {
-  gap: 80px;
-  margin-top: 80px;
-  padding-bottom: 90px;
+.table_theme_dark {
+  margin: 0 auto 0;
+  z-index: 3;
 }
 
 .cell_theme_dark {
   width: 200px;
-  margin-right: 10px;
-  color: #f2f2f2;
-  z-index: 1;
-}
+  padding-bottom: 0;
+  color: white;
 
-.kaufman__triangle {
-  position: absolute;
-}
-
-.triangle_place_kaufman {
-  width: 877px;
-  height: 877px;
-  top: 0;
-  right: -210px;
-  z-index: -1;
+  margin-top: 80px;
 }
 
 .footer {
@@ -307,7 +292,7 @@ p {
 }
 
 .footer__column {
-  color: #f2f2f2;
+  color: white;
 }
 
 .footer__column_content_copyright {
@@ -338,14 +323,10 @@ p {
 }
 
 .footer__list {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.footer__column-link_type_translate:hover {
-  transition: 1s ease;
-  opacity: 0.3;
+  margin-bottom: 16px;
 }
 
 .footer__social-icon {
@@ -355,7 +336,7 @@ p {
 }
 
 .footer__column-link {
-  color: #f2f2f2;
+  color: white;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
