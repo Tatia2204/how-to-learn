@@ -179,14 +179,6 @@
   margin-bottom: 0;
 }
 
-.text__indent {
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
 .feynman {
   min-height: 890px;
   position: relative;
@@ -265,7 +257,7 @@
   z-index: 3;
 }
 
-.cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   padding-bottom: 0;
   color: white;
