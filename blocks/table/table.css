@@ -1,0 +1,13 @@
+.table {
+  display: flex;
+  flex-grow: 1;
+  max-width: 1100px;
+  flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  padding-left: 0;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
