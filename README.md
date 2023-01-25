@@ -11,10 +11,10 @@
 ## Технологии использованные при создании сайта:
 * HTML5;
 * CSS3:
-* Flexbox;
-* Positioning;
-* Adaptive UI;
-* Media Queries;
+   * Flexbox;
+   * Positioning;
+   * Adaptive UI;
+   * Media Queries;
 * Методология БЭМ;
 * Файловая структура Nested БЭМ;
 * Работа с медиафайлами (HTML-video, iframe);
