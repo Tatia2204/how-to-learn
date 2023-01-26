@@ -22,12 +22,12 @@
 
 ## Макеты проектной работы:
 * [Макет1](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf);
-* [Макет2](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf);
+* [Макет2](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf).
 
 ## Чеклисты Проектной работы:
 
-* [Чеклист 1;](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf);
-* [Чеклист 2.](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf);
+* [Чеклист 1](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf);
+* [Чеклист 2](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf).
 
 ## Ссылки на сайт:
 
